@@ -1,0 +1,2853 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feature Flag Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+    th {
+      background: #333;
+      color: white;
+      padding: 10px;
+    }
+    td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+    pre {
+      margin: 0;
+      font-size: 12px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>Feature Flag Report - Default project, Prod-Default environment</h1>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Rollout Status</th>
+      <th>Default Rule</th>
+      <th>Killed</th>
+    </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>Abc123</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>abcdef</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>activate_alarm</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>adopt_a_dog</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>ai_prompts</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "circus",
+    "size": 33
+  },
+  {
+    "treatment": "analyst",
+    "size": 33
+  },
+  {
+    "treatment": "cowboy",
+    "size": 34
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>alien_flag</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>alight</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>alpine_flag</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>alternate_segment</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>alz</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>alz_modal</td>
+        <td>Permanent</td>
+        <td><pre>[
+  {
+    "treatment": "research",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>alz_nav</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>alz_signup</td>
+        <td>0% in Production</td>
+        <td><pre>[
+  {
+    "treatment": "y-axis",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>androidDynamicConfig</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>answer_prefix</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>anti_spoofing_measures</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "fourth",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>apartments</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 33
+  },
+  {
+    "treatment": "red",
+    "size": 33
+  },
+  {
+    "treatment": "orange",
+    "size": 34
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>api</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>asure_feature</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>atwood</td>
+        <td>100% Released</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>atwood2</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>basic</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>basic2</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>bcg_first</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>bci_bar</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>bci_baz</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>bci_foo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>benchpress</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>blazor_hello</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>boolTest</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>boolean</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>brand_new_feature</td>
+        <td>Killed</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>brands</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>brighte</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>buttons</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>caitlins_dog</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "red",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>carousel</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "popular",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>centene</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>change_request_test</td>
+        <td>External Beta</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>chat_properties</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>chat_window_size</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "small",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>checkbox_menu</td>
+        <td>External Beta</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>child</td>
+        <td>External Beta</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>clockwise</td>
+        <td>Permanent</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>coaster</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>color_router</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 20
+  },
+  {
+    "treatment": "red",
+    "size": 20
+  },
+  {
+    "treatment": "green",
+    "size": 20
+  },
+  {
+    "treatment": "purple",
+    "size": 20
+  },
+  {
+    "treatment": "yellow",
+    "size": 20
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>colors</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>colorshuffle</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>corcentric</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>coupon</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "orange",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>cpu-burner</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>crain_books</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>credit_card</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>db_gate</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-11</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-12</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-13</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-14</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-3</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-4</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-6</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-7</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dbm-test-9</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 10
+  },
+  {
+    "treatment": "off",
+    "size": 90
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>dbm_foo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>deal_on_a_pie</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "red",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>dealer_special</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>def</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>demo_mode</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>drools_petstore</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "dogs",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>dsflsjafoasiudfoiau</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>dumbwaiter</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "entrees",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>enigma</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 33
+  },
+  {
+    "treatment": "red",
+    "size": 33
+  },
+  {
+    "treatment": "green",
+    "size": 34
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>env_flag</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>env_flag2</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>erratum</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>evaluator-benchmark</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>evenOrOdd</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>feature_transform</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>ff_open_enrollment</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>fifth_field</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023322</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023323</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023324</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023325</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023326</td>
+        <td>Experimenting</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023327</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023328</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023329</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023330</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023331</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202341</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023410</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023411</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023412</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023413</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023414</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023415</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023416</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023417</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023418</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023419</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202342</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023420</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023421</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023422</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023423</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023424</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-2023425</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202343</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202344</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202345</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202346</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202347</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202348</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>firewood-202349</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>first_flag_demo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>foo_foo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>foo_parent</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>foobarbazquux1</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>for_account</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>ga_promo</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "cherry_blossoms",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>getArray</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>getBool</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>getInt</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>goo_goo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>grid_enabled</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>hail_warning</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>home_page_variant</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "new_home",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>home_status_notifier</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>hooks</td>
+        <td>Permanent</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>hw</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>identity_config</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>ingram</td>
+        <td>Killed</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>investment</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "green",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>invirtiendo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>japan_feature</td>
+        <td>100% Released</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>jazz</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>journey</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>jsonTest</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "True_",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>kfc_new_item</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>landing_page_greeting</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>list_test</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>loans</td>
+        <td>Permanent</td>
+        <td><pre>[
+  {
+    "treatment": "red",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>log4j_level</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "INFO",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>log_level</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "fine",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>logging</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>magic_boxes</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>map_of_cities</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>mcd</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>modal_madness</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>moodys</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>mosaic_flag</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>mosaic_users</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>motd</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "freemium",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>multivariant_buttons</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>multivariant_demo</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "red",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>murakami</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>new_feature_flag</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>new_investment</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "term",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>new_item</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>new_onboarding</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>new_onboarding_react</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>new_search</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>new_ui_widget</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>new_url_enabled</td>
+        <td>100% Released</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>next_banner</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>next_color</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>next_step</td>
+        <td>0% in Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>noir_exit</td>
+        <td>External Beta</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>noir_form</td>
+        <td>Internal Testing</td>
+        <td><pre>[
+  {
+    "treatment": "tap_here",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>noir_response</td>
+        <td>External Beta</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>numberOrChar</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>ocean_beach</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>onescreen</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>openfeaturetest</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>orange_blossom</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>pacifico_valves</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>parent</td>
+        <td>Ramping</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>peanut_butter</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>platinum_button</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "platinum",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>prestige_credit</td>
+        <td>Experimenting</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 20
+  },
+  {
+    "treatment": "off",
+    "size": 80
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>pseudo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>rocket</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>ryan</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>sadfsafsadf</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>sample_questions</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>satisfied_response</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>scratch</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>segment_promo</td>
+        <td>External Beta</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>semver</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>shabam</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 3
+  },
+  {
+    "treatment": "off",
+    "size": 97
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>shopping_cart</td>
+        <td>100% Released</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>show_new_header</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>signant</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 15
+  },
+  {
+    "treatment": "red",
+    "size": 10
+  },
+  {
+    "treatment": "green",
+    "size": 20
+  },
+  {
+    "treatment": "lime",
+    "size": 20
+  },
+  {
+    "treatment": "yellow",
+    "size": 35
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>signup_screen</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>simple</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>simplehtml_102_3</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>sky</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "yellow",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>snow</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>splash</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>storm_warning</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "rain",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>super_secret_feature</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>svelte_flag</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>talk_to_a_person</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>test_of_group_name</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>tfs-demo</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>tmp_agus_test</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>transunion</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>transunion2</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>tutorial</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>typical_journey</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>uhd_super_streaming</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "red",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>ui_mode</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>ulta</td>
+        <td>Killed</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>ulta_proxy</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>use_async_gather</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>vanilla</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>visual</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>vitamin_c</td>
+        <td>Permanent</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0ffd0'>
+        <td>vue</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>whirlpool</td>
+        <td>Removed from Code</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>word_count_text</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#ffd0d0'>
+        <td>word_style</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "off",
+    "size": 100
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#d0e0ff'>
+        <td>yuki</td>
+        <td>Pre-Production</td>
+        <td><pre>[
+  {
+    "treatment": "on",
+    "size": 50
+  },
+  {
+    "treatment": "off",
+    "size": 50
+  }
+]</pre></td>
+      </tr>
+    
+      <tr style='background:#f6f6f6'>
+        <td>z_multivariant_demo</td>
+        <td>Permanent</td>
+        <td><pre>[
+  {
+    "treatment": "blue",
+    "size": 33
+  },
+  {
+    "treatment": "red",
+    "size": 33
+  },
+  {
+    "treatment": "green",
+    "size": 34
+  }
+]</pre></td>
+      </tr>
+    
+  </table>
+</body>
+</html>

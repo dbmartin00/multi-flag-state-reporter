@@ -59,6 +59,57 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Fetch project (workspace) name by listing workspaces
+async function getProjectName() {
+  const BASE_URL = 'https://fme-prod.harness.io/internal/api/v2/workspaces';
+  const limit = 100;
+  let offset = 0;
+
+  try {
+    while (true) {
+      const resp = await axios.get(BASE_URL, {
+        params: { limit, offset },
+        headers: { 'x-api-key': API_TOKEN }
+      });
+
+      const { objects = [], totalCount = 0 } = resp.data || {};
+
+      // Find workspace matching PROJECT_ID
+      const workspace = objects.find(ws => ws.id === PROJECT_ID);
+      if (workspace) {
+        return workspace.name;
+      }
+
+      // Continue pagination
+      offset += objects.length;
+      if (offset >= totalCount || objects.length === 0) {
+        break;
+      }
+    }
+
+    console.warn("Project not found in workspace list");
+    return PROJECT_ID;
+  } catch (error) {
+    console.error("Error fetching project name:", error.message);
+    return PROJECT_ID;
+  }
+}
+
+// Fetch environment name by listing environments
+async function getEnvironmentName() {
+  const url = `https://api.split.io/internal/api/v2/environments/ws/${PROJECT_ID}`;
+  try {
+    const resp = await axios.get(url, {
+      headers: { 'x-api-key': API_TOKEN }
+    });
+    const environment = resp.data.find(env => env.id === ENVIRONMENT_ID);
+    return environment?.name || ENVIRONMENT_ID;
+  } catch (error) {
+    console.error("Error fetching environment name:", error.message);
+    return ENVIRONMENT_ID;
+  }
+}
+
 // Fetch definition for a specific flag
 async function getFlagDefinition(name) {
   await sleep(500);
@@ -110,6 +161,11 @@ function rowColor(def) {
 
 // Main execution
 async function main() {
+  console.log("Fetching project and environment names...");
+  const projectName = await getProjectName();
+  const environmentName = await getEnvironmentName();
+  console.log(`Project: ${projectName}, Environment: ${environmentName}`);
+
   console.log("Fetching flags...");
   const flags = await getFlags();
 
@@ -182,7 +238,7 @@ async function main() {
   </style>
 </head>
 <body>
-  <h1>Feature Flag Report</h1>
+  <h1>Feature Flag Report - ${projectName} project, ${environmentName} environment</h1>
   <table>
     <tr>
       <th>Name</th>
